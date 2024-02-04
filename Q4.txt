@@ -1,0 +1,14 @@
+SELECT ATTRIBUTE(S):
+prod, month, 3_avg_quant
+NUMBER OF GROUPING VARIABLES(n):
+3
+GROUPING ATTRIBUTES(V):
+prod, month
+F-VECT([F]):
+1_avg_quant, 2_avg_quant, 3_avg_quant
+SELECT CONDITION-VECT([σ]):
+1.prod = prod and 1.month = month - 1
+2.prod = prod and 2.month = month + 1
+3.prod = prod and 3.month = month 
+HAVING_CONDITION(G):
+3_avg_quant > 1_avg_quant and 3_avg_quant < 2_avg_quant
